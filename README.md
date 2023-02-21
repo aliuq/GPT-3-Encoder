@@ -17,7 +17,7 @@ default
 import { decode, encode } from '@aliuq/gpt-3-encoder'
 
 encode(str)
-decode(token)
+decode(tokens)
 ```
 
 fetch
@@ -36,7 +36,7 @@ const options = {
 }
 
 encode(str, options)
-decode(token, options)
+decode(tokens, options)
 ```
 
 also, you can copy the files to your own server and use them.
