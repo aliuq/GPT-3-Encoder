@@ -46,7 +46,6 @@ test('emojis', async () => {
 
 test('properties of Object', async () => {
   const str = 'toString constructor hasOwnProperty valueOf'
-
   expect(await encode(str, options)).toEqual([1462, 10100, 23772, 468, 23858, 21746, 1988, 5189])
   expect(await decode(await encode(str, options), options)).toEqual(str)
 })
