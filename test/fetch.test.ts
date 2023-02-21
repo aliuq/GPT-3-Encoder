@@ -3,8 +3,9 @@ import type { Options } from '../src/fetch'
 import { decode, encode } from '../src/fetch'
 
 const options: Options = {
-  bpe: 'https://unpkg.com/gpt-3-encoder@1.1.4/vocab.bpe',
-  encoder: 'https://unpkg.com/gpt-3-encoder@1.1.4/encoder.json',
+  // Maybe faster in github actions
+  bpe: 'https://raw.githubusercontent.com/aliuq/GPT-3-Encoder/master/src/assets/vocab.bpe',
+  encoder: 'https://raw.githubusercontent.com/aliuq/GPT-3-Encoder/master/src/assets/encoder.json',
 }
 
 test('empty string', async () => {
