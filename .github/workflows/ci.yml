@@ -7,6 +7,7 @@ on:
     paths:
       - 'src/**/*'
       - 'test/**/*'
+      - '.github/workflows/**/*'
   pull_request:
     branches:
       - master
@@ -47,5 +48,5 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run test
+      - run: pnpm run test --run
 
