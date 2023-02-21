@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "es2018",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "jsx": "preserve",
+    "baseUrl": "./"
+  },
+  "include": ["src", "types.d.ts"],
+  "exclude": [
+    "**/dist/**",
+    "**/node_modules/**",
+    "**/test/**"
+  ]
+}
