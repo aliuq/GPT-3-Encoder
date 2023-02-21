@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import { decode, encode } from '../src/index'
+import { decode, encode } from '../dist/index'
 
 test('empty string', () => {
   const str = ''

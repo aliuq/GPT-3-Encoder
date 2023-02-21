@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest'
-import type { Options } from '../src/fetch'
-import { decode, encode } from '../src/fetch'
+import type { Options } from '../dist/fetch'
+import { decode, encode } from '../dist/fetch'
 
 const options: Options = {
   // Maybe faster in github actions
