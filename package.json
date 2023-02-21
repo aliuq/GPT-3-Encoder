@@ -6,13 +6,13 @@
   "description": "Javascript BPE Encoder Decoder for GPT-2 / GPT-3",
   "author": "",
   "license": "MIT",
-  "homepage": "https://github.com/AIDungeon/GPT-3-Encoder#readme",
+  "homepage": "https://github.com/aliuq/GPT-3-Encoder#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AIDungeon/GPT-3-Encoder.git"
+    "url": "git+https://github.com/aliuq/GPT-3-Encoder.git"
   },
   "bugs": {
-    "url": "https://github.com/AIDungeon/GPT-3-Encoder/issues"
+    "url": "https://github.com/aliuq/GPT-3-Encoder/issues"
   },
   "exports": {
     ".": {
