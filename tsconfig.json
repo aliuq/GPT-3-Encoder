@@ -16,10 +16,9 @@
     "jsx": "preserve",
     "baseUrl": "./"
   },
-  "include": ["src", "types.d.ts"],
+  "include": ["src", "types.d.ts", "test"],
   "exclude": [
     "dist/**",
-    "node_modules/**",
-    "test/**"
+    "node_modules/**"
   ]
 }

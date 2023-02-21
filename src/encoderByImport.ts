@@ -25,13 +25,13 @@ function encodePrepare() {
 
 function decodePrepare() {
   if (!decoder) {
-    decoder ||= {}
+    decoder = decoder || {}
     Object.keys(encoder).forEach((x) => {
       decoder![encoder[x]] = x
     })
   }
   if (!byte_decoder) {
-    byte_decoder ||= {}
+    byte_decoder = byte_decoder || {}
     Object.keys(byte_encoder).forEach((x) => {
       byte_decoder![byte_encoder[x]] = x
     })

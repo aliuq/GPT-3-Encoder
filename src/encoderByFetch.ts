@@ -39,7 +39,7 @@ async function request(url: string, responseType: 'json' | 'text' = 'json') {
 }
 
 async function encodePrepare(options?: Options) {
-  byte_encoder ||= bytes_to_unicode()
+  byte_encoder = byte_encoder || bytes_to_unicode()
 
   if (!encoder && !options?.encoder)
     throw new Error('Please provide encoder json file url')
@@ -65,9 +65,9 @@ async function encodePrepare(options?: Options) {
 }
 
 async function decodePrepare(options?: Pick<Options, 'encoder'>) {
-  byte_encoder ||= bytes_to_unicode()
+  byte_encoder = byte_encoder || bytes_to_unicode()
   if (!byte_decoder) {
-    byte_decoder ||= {}
+    byte_decoder = byte_decoder || {}
     Object.keys(byte_encoder).forEach((x) => {
       byte_decoder![byte_encoder?.[x]] = x
     })
@@ -80,7 +80,7 @@ async function decodePrepare(options?: Pick<Options, 'encoder'>) {
     encoder = await request(options.encoder) as Record<any, any>
 
   if (!decoder) {
-    decoder ||= {}
+    decoder = decoder || {}
     Object.keys(encoder as Record<any, any>).forEach((x) => {
       decoder![encoder?.[x]] = x
     })
