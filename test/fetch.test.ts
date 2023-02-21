@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest'
-import type { Options } from '../dist/fetch'
-import { decode, encode } from '../dist/fetch'
+import type { Options } from '../src/fetch'
+import { decode, encode } from '../src/fetch'
 
 const options: Options = {
   bpe: 'https://unpkg.com/gpt-3-encoder@1.1.4/vocab.bpe',

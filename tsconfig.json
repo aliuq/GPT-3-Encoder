@@ -18,8 +18,8 @@
   },
   "include": ["src", "types.d.ts"],
   "exclude": [
-    "**/dist/**",
-    "**/node_modules/**",
-    "**/test/**"
+    "dist/**",
+    "node_modules/**",
+    "test/**"
   ]
 }

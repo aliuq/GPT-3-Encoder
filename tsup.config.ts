@@ -13,7 +13,6 @@ export default defineConfig({
   publicDir: 'src/assets',
   loader: {
     '.bpe': 'text',
-    '.json': 'text',
   },
   outExtension({ format }) {
     return {

@@ -3,7 +3,7 @@ import bpeFile from './assets/vocab.bpe'
 
 import { bytes_to_unicode, decodeStr, dictZip, encodeStr, get_pairs, pat, range } from './utils'
 
-const encoder: Record<any, any> = JSON.parse(encoderJSON as unknown as string)
+const encoder: Record<any, any> = encoderJSON
 let decoder: Record<any, any> | undefined
 const byte_encoder = bytes_to_unicode()
 let byte_decoder: Record<any, any> | undefined
