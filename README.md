@@ -2,7 +2,7 @@
 
 Javascript BPE Encoder Decoder for GPT-2 / GPT-3
 
-Forked from [GPT-3-Encoder](GPT-3-Encoder)
+Forked from [latitudegames/GPT-3-Encoder](https://github.com/latitudegames/GPT-3-Encoder)
 
 Differences from the original repository:
 
