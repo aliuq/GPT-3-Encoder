@@ -9,11 +9,12 @@
     "esModuleInterop": true,
     "strict": true,
     "strictNullChecks": true,
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
     "jsx": "preserve",
+    "declaration": true,
     "baseUrl": "./"
   },
   "include": ["src", "types.d.ts", "test"],

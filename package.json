@@ -33,8 +33,12 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "types.d.ts"
   ],
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
     "dev": "tsup --watch --onSuccess \"node dist/index.mjs\"",
     "build": "tsup",
