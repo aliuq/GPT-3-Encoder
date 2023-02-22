@@ -39,4 +39,6 @@ encode(str, options)
 decode(tokens, options)
 ```
 
-also, you can copy the files to your own server and use them.
+You need to set `moduleResolution` in `tsconfig.json` to `node16` or `nodenext`, otherwise it will prompt that the type declaration is not found, or you can use `// @ts-expect-error` to ignore the error, If `fetch` and `globalThis.fetch` do not exist, you need to install `axios`.
+
+Also, you can copy the files to your own server and use them.
